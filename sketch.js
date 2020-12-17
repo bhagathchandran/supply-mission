@@ -5,6 +5,10 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
+var box1;
+var box2;
+var box3;
+
 function preload()
 {
 	helicopterIMG=loadImage("helicopter.png")
@@ -15,6 +19,15 @@ function setup() {
 	createCanvas(800, 700);
 	rectMode(CENTER);
 	
+	box1=createSprite(width/2, 650, 150,10);
+	box1.shapeColor = ("red")
+	box2=createSprite(470, 615, 10,80);
+	box2.shapeColor = ("red")
+	box3=createSprite(320, 615, 10,80);
+	box3.shapeColor = ("red")
+
+
+
 
 	packageSprite=createSprite(width/2, 80, 10,10);
 	packageSprite.addImage(packageIMG)
